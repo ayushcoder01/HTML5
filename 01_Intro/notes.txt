@@ -1,0 +1,142 @@
+INTRODUCTION TO HTML :-
+=======================
+-> Definition:
+ - HTML stands for HyperText Markup Language.
+ - It is the standard markup language used to create and structure content on the web.
+ - HTML is not a programming language; it is a declarative language that defines what the browser should render.
+
+-> Explanation:
+ - HyperText: Text that includes links to other web pages or resources.
+ - Markup Language: Uses tags to describe the structure and elements of a document (headings, paragraphs, links, etc.).
+
+-> Purpose:
+ - HTML structures all content on the web.
+ - It is used to define text, multimedia, links, forms, and layout.
+
+-> Use Cases:
+ - Building static or dynamic websites.
+ - Structuring documents for SEO and accessibility.
+
+-> Best Practices:
+ - Always use <!DOCTYPE html> as the first line.
+ - Write tags and attributes in lowercase for consistency.
+ - Use semantic HTML (e.g., <article>, <section>, <main>) to improve readability and accessibility.
+ - Close all tags properly and maintain indentation.
+ - Validate code using the W3C HTML Validator.
+
+-> Expert Tips:
+ - Browsers may auto-correct some errors, but rely on clean code for cross-browser compatibility.
+ - Use Emmet in code editors like VS Code to write HTML faster.
+ - HTML5 introduced semantic elements to improve structure and accessibility.
+
+
+HTML STRUCTURE :-
+=================
+-> Overview:
+ - An HTML document is structured in a specific way to be interpreted correctly by browsers.
+ - It has three main sections: DOCTYPE declaration, the <head>, and the <body>.
+
+-> <!DOCTYPE html>:
+ - Declares the HTML5 document type.
+ - Not a tag—it's a declaration.
+ - Must be the first line of the document.
+ - Ensures browsers render the page in standards mode.
+
+-> <html> Element:
+ - The root element that wraps the entire document.
+ - Contains <head> and <body> sections.
+ - Can include a lang attribute for language declaration.
+ - Example: <html lang="en">
+
+-> <head> Element:
+ - Contains meta-information and settings, not shown on the page.
+ - Common elements inside <head>:
+   - <title>: Sets the page title (displayed on browser tab).
+   - <meta>: Defines metadata like charset and viewport.
+   - <link>: Links external stylesheets.
+
+-> <body> Element:
+ - Contains all visible content on the page.
+ - Includes text, headings, images, videos, forms, buttons, etc.
+ - Main area for building the UI.
+
+ - Real-World Example:
+   <!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>My Portfolio</title>
+     </head>
+     <body>
+       <h1>Welcome to My Portfolio</h1>
+       <p>This is where I showcase my work.</p>
+     </body>
+   </html>
+
+-> Best Practices:
+ - Always include the lang attribute for accessibility.
+ - Use meta viewport for responsive design on mobile.
+ - Keep the head section minimal and efficient.
+
+
+HTML SYNTAX :-
+==============
+-> Overview:
+ - HTML syntax includes how to correctly write and organize tags, elements, and attributes to build functional and valid web pages.
+
+-> Tags:
+ - Tags are keywords enclosed in angle brackets, like <p>.
+ - Most tags are paired: opening tag <tag> and closing tag </tag>.
+ - Some tags are self-closing: <img>, <input>, <hr>, <br>.
+
+-> Elements:
+ - An element consists of an opening tag, content (optional), and a closing tag.
+ - Example: <p>Hello</p>
+ - Elements can be nested inside each other.
+
+ - Types of elements:
+   • Block-level: Start on a new line and span full width (e.g., <div>, <p>, <article>)
+   • Inline: Do not break the line (e.g., <span>, <a>, <strong>)
+
+-> Attributes:
+ - Provide extra information about an element.
+ - Syntax: name="value" (always in the opening tag)
+
+ - Common attributes:
+   • id: Unique identifier
+   • class: CSS or JavaScript hook
+   • src: Image or media path
+   • href: Link target
+   • alt: Image description
+   • style: Inline CSS styles
+   • title: Tooltip text
+
+ - Boolean attributes (HTML5): Do not require a value (e.g., disabled, checked, readonly)
+
+-> Global Attributes:
+ - Can be applied to most HTML tags.
+
+ - Common global attributes:
+   • id
+   • class
+   • hidden
+   • tabindex
+   • data-* (custom data attributes)
+   • contenteditable
+
+ - Example:
+   <a href="https://example.com" target="_blank" title="Visit site">Click here</a>
+
+-> Best Practices:
+ - Always use double quotes for attribute values.
+ - Use meaningful alt text for images to improve accessibility.
+ - Nest elements properly and close tags in order.
+ - Prefer semantic tags over generic divs for better structure.
+
+-> Common Mistakes to Avoid:
+ - Unclosed or mismatched tags.
+ - Using tags in the wrong nesting order.
+ - Forgetting the DOCTYPE declaration.
+ - Skipping alt attributes on <img> tags.
+ - Overusing <div> and <span> without semantic meaning.

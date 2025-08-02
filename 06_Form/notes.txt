@@ -1,0 +1,158 @@
+HTML FORMS :-
+=============
+-> Purpose:
+ - HTML forms allow users to input data that can be submitted to a server.
+ - Common use cases:
+   • Login/Signup
+   • Surveys
+   • Feedback forms
+   • Checkout pages
+
+ - Common form elements:
+   • Text fields
+   • Checkboxes
+   • Radio buttons
+   • Dropdowns
+   • Buttons
+
+
+<form> Tag :-
+-------------
+-> Syntax:
+   <form action="/submit" method="post">
+     <!-- Form fields go here -->
+   </form>
+
+-> Attributes:
+ - action       → URL where data is sent
+ - method       → HTTP method: "get" (default) or "post"
+ - autocomplete → Enables/disables autofill
+ - novalidate   → Turns off browser's native validation
+
+
+Common <input> Types :-
+-----------------------
+ - type="text"
+   • Single-line input
+   • Example: <input type="text" name="username">
+
+ - type="password"
+   • Hides typed characters
+   • Example: <input type="password" name="password">
+
+ - type="email"
+   • Validates proper email format
+   • Example: <input type="email" name="user_email">
+
+ - type="number"
+   • Only accepts numbers
+   • Example: <input type="number" name="age" min="0">
+
+ - type="checkbox"
+   • Allows multiple selections
+   • Example: <input type="checkbox" name="skills" value="HTML">
+
+ - type="radio"
+   • Select one option from a group
+   • Example:
+     <input type="radio" name="gender" value="male"> Male
+     <input type="radio" name="gender" value="female"> Female
+
+ - type="submit"
+   • Submits the form
+   • Example: <input type="submit" value="Submit">
+
+ - type="reset"
+   • Clears all input fields
+   • Example: <input type="reset" value="Clear">
+
+ - type="button"
+   • Custom button (usually used with JavaScript)
+   • Example: <input type="button" value="Click Me">
+
+ - Other HTML5 input types:
+   • date, url, tel, range, color, search, file
+
+
+Other Form Elements :-
+----------------------
+ - <label>
+   • Provides accessible text for inputs
+   • Use 'for' and 'id' to connect:
+     <label for="name">Name:</label>
+     <input id="name" type="text">
+
+ - <textarea>
+   • Multi-line input
+   • Example:
+     <textarea name="message" rows="4" cols="30"></textarea>
+
+ - <select> and <option>
+   • Dropdown menu
+   • Example:
+     <select name="country">
+       <option value="in">India</option>
+       <option value="us">USA</option>
+     </select>
+
+ - <button>
+   • More flexible than <input type="submit">
+   • Can contain HTML:
+     <button type="submit">Send</button>
+
+
+Input Field Attributes :-
+-------------------------
+ - name        → Key used in data submission
+ - id          → Unique identifier
+ - value       → Pre-filled value
+ - placeholder → Hint inside the field
+ - required    → Makes input mandatory
+ - disabled    → Grays out field (non-editable)
+ - readonly    → Non-editable but still submitted
+ - minlength / maxlength → Char limits
+ - pattern     → Regex pattern for validation
+ - autofocus   → Field auto-focused on page load
+
+
+GET vs POST Method :-
+---------------------
+ - GET:
+   • Data appears in URL
+   • Not secure
+   • Useful for searches, filters
+   • Example: <form method="get">
+
+ - POST:
+   • Data is hidden in request body
+   • More secure
+   • Suitable for login, payments, etc.
+   • Example: <form method="post">
+
+
+Grouping with <fieldset> and <legend> :-
+----------------------------------------
+-> Syntax:
+   <fieldset>
+     <legend>Personal Info</legend>
+     <input type="text" name="name">
+   </fieldset>
+
+ - Helps semantically group related inputs
+ - Improves accessibility and layout
+
+-> Accessibility Tips 
+ - Always associate <label> with inputs
+ - Use specific input types (e.g., email, tel) for better UX
+ - Use <fieldset> for grouped fields (e.g., radio buttons)
+ - Add `aria-*` attributes only when necessary
+ - Avoid using tables for form layouts
+
+-> Best Practices
+ - Use semantic HTML5 input types (email, url, date, etc.)
+ - Always include `required` and proper validation attributes
+ - Use JavaScript only when native validation isn’t enough
+ - Avoid inline JavaScript — separate it from HTML
+ - Place related form elements inside <form> (or use form="" attribute)
+ - Keep forms short and clear for better usability
+

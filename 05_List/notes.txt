@@ -1,0 +1,129 @@
+HTML LISTS :-
+=============
+-> Purpose of HTML Lists:
+ - Used to group related information in a structured format.
+ - Improves:
+   • Readability
+   • Semantic structure
+   • Accessibility (screen readers)
+
+ - Three main types:
+   1. Ordered List (<ol>)
+   2. Unordered List (<ul>)
+   3. Description List (<dl>)
+   4. Nested Lists
+
+
+Ordered List :-
+---------------
+-> Definition:
+ - Displays items in a numbered sequence.
+ - Uses <li> for each list item.
+
+-> Example:
+   <ol>
+     <li>Step One</li>
+     <li>Step Two</li>
+     <li>Step Three</li>
+   </ol>
+
+-> Attributes:
+ - type:
+   • Sets the numbering style:
+     - "1" → 1, 2, 3 (default)
+     - "A" → A, B, C
+     - "a" → a, b, c
+     - "I" → I, II, III
+     - "i" → i, ii, iii
+   • Example:
+     <ol type="A">
+
+ - start:
+   • Defines the starting number.
+   • Example:
+     <ol start="5">
+
+ - reversed:
+   • Reverses the order of numbers.
+   • Example:
+     <ol reversed>
+
+
+Unordered List :-
+-----------------
+-> Definition:
+ - Displays items with bullet points.
+ - Also uses <li> elements.
+
+-> Example:
+   <ul>
+     <li>Apple</li>
+     <li>Banana</li>
+     <li>Cherry</li>
+   </ul>
+
+-> Bullet Styles (use CSS):
+ - list-style-type options:
+   • disc (default)
+   • circle
+   • square
+   • none
+
+ - Example with CSS:
+   <ul style="list-style-type: square;">
+
+ - (Deprecated in HTML5): <ul type="circle">
+
+
+Description List :-
+-------------------
+-> Definition:
+ - Displays term/description pairs.
+ - Great for glossaries, FAQs, or metadata.
+
+-> Structure:
+ - <dl> = Description list container
+ - <dt> = Term or title
+ - <dd> = Description
+
+-> Example:
+   <dl>
+     <dt>HTML</dt>
+     <dd>HyperText Markup Language</dd>
+     <dt>CSS</dt>
+     <dd>Cascading Style Sheets</dd>
+   </dl>
+
+Nesting Lists :-
+----------------
+-> Nest lists inside <li> elements to create sub-lists.
+
+-> Example:
+   <ul>
+     <li>Fruits
+       <ul>
+         <li>Apple</li>
+         <li>Banana</li>
+       </ul>
+     </li>
+     <li>Vegetables</li>
+   </ul>
+
+ - You can mix <ul> and <ol> for custom nesting.
+ - Keep indentation clean for readability.
+
+
+-> Best Practices & Accessibility 
+ - Use lists for:
+   • Steps or instructions
+   • Feature breakdowns
+   • Navigation menus (typically <ul>)
+
+ - DOs:
+   • Keep list items (<li>) short and consistent.
+   • Choose the right type of list semantically.
+   • Use nesting sparingly and logically.
+
+ - DON'Ts:
+   • Don’t use lists just for layout/spacing.
+   • Avoid unnecessary ARIA roles (HTML lists are already accessible)

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media Practice</title>
+  </head>
+  <body>
+    <h1>My Personal Media Library</h1>
+    <hr />
+
+    <section>
+      <h2>Audio Samples</h2>
+      <audio controls>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Tutorial Video</h2>
+      <video
+        width="400"
+        controls
+        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+      >
+        <source
+          src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Embedded YouTube Video</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UB1O30fR-EE"
+        title="HTML Full Course - freeCodeCamp.org"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+
+      <p>Watch this awesome HTML crash course!</p>
+    </section>
+
+    <section>
+      <h2>View Notes of this Chapter</h2>
+      <iframe src="notes.txt" width="80%" height="500px"></iframe>
+    </section>
+
+    <hr />
+
+    <p><small>&copy; 2025 Ayush Mishra – All rights reserved.</small></p>
+  </body>
+</html>

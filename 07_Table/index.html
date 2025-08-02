@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Practice</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px 16px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product Price List</h1>
+
+    <table>
+      <caption>
+        List of Available Products with Prices
+      </caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Product</th>
+          <th scope="col">Price (₹)</th>
+          <th scope="col">In Stock</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Electronics</td>
+          <td>Smartphone</td>
+          <td>15000</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Headphones</td>
+          <td>2000</td>
+          <td>No</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Books</td>
+          <td>HTML & CSS</td>
+          <td>499</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>JavaScript Basics</td>
+          <td>599</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Total (In-Stock Items)</strong></td>
+          <td colspan="2">₹16,098</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

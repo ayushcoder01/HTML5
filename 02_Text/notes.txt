@@ -1,0 +1,82 @@
+HTML TEXT :-
+============
+-> HTML Headings:
+ - HTML provides six levels of headings: <h1> to <h6>.
+ - <h1> is the most important (largest), and <h6> is the least important (smallest).
+ - Headings define content hierarchy and are used by search engines and screen readers to understand page structure.
+ - Ideally, only one <h1> should be used per page for SEO purposes.
+
+ - Example:
+   <h1>Main Heading</h1>
+   <h2>Subheading</h2>
+   <h3>Sub-subheading</h3>
+   ...
+   <h6>Smallest Heading</h6>
+
+ - Best Practices:
+   • Use headings in a logical, nested order (h1 > h2 > h3...).
+   • Avoid skipping heading levels (e.g., don't jump from h1 to h4).
+   • Use headings to reflect the content outline for SEO and accessibility.
+
+-> Paragraph, Horizontal Rule, Line Break:
+ - <p> (Paragraph):
+   • Defines a block of text content.
+   • Has default margin spacing before and after.
+   • Can include inline elements like <strong>, <a>, <em>, etc.
+   • Example:
+     <p>This is a paragraph.</p>
+
+ - <hr> (Horizontal Rule):
+   • Creates a thematic break or separation between sections.
+   • Renders a horizontal line.
+   • Self-closing in HTML5; does not require a closing tag.
+   • Example:
+     <hr>
+
+ - <br> (Line Break):
+   • Inserts a manual line break inside text or a paragraph.
+   • Commonly used in poetry, addresses, or line-by-line content.
+   • Should not be used for layout purposes—use CSS instead.
+   • Example:
+     Line 1<br>Line 2
+
+-> Text Formatting Tags:
+ - Used to style or add semantic meaning to specific parts of inline text.
+
+ - <b>: Bold text (purely visual)  
+   Example: <b>This is bold</b>
+
+ - <strong>: Important/strong emphasis (semantic + visual)  
+   Example: <strong>Important!</strong>
+
+ - <i>: Italic text (purely visual)  
+   Example: <i>This is italic</i>
+
+ - <em>: Emphasized text (semantic + visual)  
+   Example: <em>Very important</em>
+
+ - <mark>: Highlights text (usually yellow background)  
+   Example: <mark>Highlighted</mark>
+
+ - <u>: Underlines text (purely visual)  
+   Example: <u>Underlined</u>
+
+ - <small>: Displays text smaller than surrounding text  
+   Example: <small>This is small</small>
+
+ - <del>: Represents deleted/removed text (strikethrough)  
+   Example: <del>Old price</del>
+
+ - <ins>: Represents inserted/added text (underlined by default)  
+   Example: <ins>New addition</ins>
+
+ - <sub>: Subscript text (used in formulas, e.g., H₂O)  
+   Example: H<sub>2</sub>O
+
+ - <sup>: Superscript text (used in exponents, e.g., E = mc²)  
+   Example: E = mc<sup>2</sup>
+
+-> Tips:
+ - Use <strong> and <em> when you want to add **meaning** as well as style.
+ - Screen readers emphasize <strong> and <em> but usually ignore <b> and <i>.
+ - Use semantic formatting to improve accessibility and SEO.

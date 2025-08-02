@@ -1,0 +1,89 @@
+HTML HYPERLINKS :-
+==================
+-> Definition:
+ - Hyperlinks allow users to click and navigate to:
+   • Other web pages (internal or external)
+   • Specific sections within the same page
+   • Email addresses or phone numbers
+ - Created using the <a> (anchor) tag.
+
+-> Basic Syntax:
+   <a href="URL">Link Text</a>
+
+-> href Attribute:
+ - Specifies the destination of the link.
+ - Values can include:
+   • External URLs: https://example.com
+   • Internal page paths: about.html
+   • Section IDs: #section
+   • Email: mailto:someone@example.com
+   • Phone: tel:+911234567890
+
+-> target Attribute:
+ - Specifies where the linked document will open.
+ - Options:
+   • _self (default): Opens in the same tab.
+   • _blank: Opens in a new browser tab.
+ - Example:
+   <a href="https://example.com" target="_blank">Visit Example</a>
+
+-> Email Links:
+   <a href="mailto:someone@example.com">Email Me</a>
+
+-> Phone Links:
+   <a href="tel:+911234567890">Call Us</a>
+
+-> Link to Same Page Section:
+ - Target element with an id:
+   <h2 id="about">About</h2>
+ - Anchor link:
+   <a href="#about">Go to About</a>
+
+-> Security Tip (target="_blank"):
+ - To prevent security vulnerabilities, always use:
+   <a href="https://example.com" target="_blank" rel="noopener noreferrer">Open Site</a>
+
+-> Best Practices:
+ - Use descriptive and meaningful link text  
+   (e.g., “Read more about our team” instead of “Click here”)
+ - Avoid opening unnecessary links in new tabs (_blank) unless needed.
+ - Use IDs and anchor links for improved navigation and user experience.
+
+
+PATH TYPES IN HTML :-
+=====================
+-> Relative Path:
+ - References a file relative to the current HTML file's location.
+ - Does NOT start with a slash or domain.
+ - Example:
+   <a href="about.html">About Page</a>  
+   <img src="images/logo.png">
+
+-> Absolute Path:
+ - Refers to the full URL of a file or resource, including domain or protocol.
+ - Used for linking external content.
+ - Example:
+   <a href="https://www.example.com/about.html">Visit About</a>  
+   <img src="https://cdn.example.com/images/logo.png">
+
+-> Root-relative Path:
+ - Begins from the root (/) of the domain/project.
+ - Ignores the current file's folder.
+ - Example:
+   <a href="/blog/article.html">Read Article</a>
+
+-> Same-folder Reference:
+ - Used when the linked file is in the same folder as the HTML file.
+ - No slashes needed.
+ - Example:
+   <a href="contact.html">Contact</a>
+
+-> Parent-folder Reference:
+ - Moves one level up using ../
+ - Example:
+   <a href="../index.html">Go to Home</a>
+
+-> Summary:
+ - Use relative paths for internal/local navigation.
+ - Use absolute paths for external sites or CDN links.
+ - Use root-relative paths for consistent structure in large projects.
