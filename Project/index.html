@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Editorial blog covering Indian insights, innovations, and public voice. Curated by Digital Daily India."
+    />
+    <title>Digital Daily India Blog</title>
+  </head>
+  <body>
+    <!--? Header Section ?-->
+    <header>
+      <h1>Digital Daily India Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#blog">Latest Posts</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#letters">Reader Letters</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <!--? Main Blog Content ?-->
+    <main>
+      <!--* Blog Articles *-->
+      <section id="blog">
+        <h2>Latest Posts</h2>
+
+        <article>
+          <h3>India's Solar Dream Becomes Reality</h3>
+          <ins><time datetime="2025-08-01">August 1, 2025</time></ins>
+          <ul>
+            <li>India launches world’s largest solar grid</li>
+            <li>Goal: Power 50 million homes by 2030</li>
+            <li>Massive milestone in clean energy leadership</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>AI Innovation at AIIMS: Cancer Test in 30 Seconds</h3>
+          <ins><time datetime="2025-07-30">July 30, 2025</time></ins>
+          <ul>
+            <li>AI tool detects early cancer signs in 30 seconds</li>
+            <li>Developed by AIIMS Delhi using saliva test</li>
+            <li>Reported accuracy: 85%</li>
+          </ul>
+        </article>
+      </section>
+
+      <!--* In-Depth Features *-->
+      <section id="features">
+        <h2>Features</h2>
+
+        <article>
+          <h3>Northeast India: Culture & Nature</h3>
+          <ins><time datetime="2025-07-28">July 28, 2025</time></ins>
+          <ul>
+            <li>Living root bridges in Meghalaya</li>
+            <li>Monastic life in Arunachal Pradesh</li>
+            <li>Eco-tourism & mindful travel</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>AI for Bharat: Sundar Pichai’s Vision</h3>
+          <ins><time datetime="2025-07-25">July 25, 2025</time></ins>
+          <ul>
+            <li>AI for rural classrooms & fintech</li>
+            <li>Digital India’s startup growth</li>
+          </ul>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8sxAcYnZFAk?si=FcK9RMCCYpJDmiZ0"
+            title="Sundar Pichai Interview"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <!--* Reader Contributions *-->
+      <section id="letters">
+        <h2>Send Us Your Thoughts</h2>
+
+        <form aria-label="Letter Submission Form">
+          <fieldset>
+            <legend>Who You Are</legend>
+
+            <p>
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="city">City:</label><br />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Your City"
+              />
+            </p>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Your Letter</legend>
+
+            <p>
+              <label for="subject">Subject:</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Letter Topic"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                cols="50"
+                required
+                placeholder="Write your thoughts here..."
+              ></textarea>
+            </p>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Publishing Preferences</legend>
+
+            <p>
+              <input type="checkbox" id="publish" name="publish" />
+              <label for="publish">Allow publication</label>
+            </p>
+
+            <p>Display my name as:</p>
+            <input type="radio" id="full" name="display" value="full" checked />
+            <label for="full">Full Name</label><br />
+
+            <input type="radio" id="first" name="display" value="first" />
+            <label for="first">First Name Only</label><br />
+
+            <input type="radio" id="anon" name="display" value="anonymous" />
+            <label for="anon">Anonymous</label>
+          </fieldset>
+          <br />
+
+          <button type="submit">Send Letter</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!--? Footer Section ?-->
+    <footer>
+      <p><small>&copy; 2025 Digital Daily India</small></p>
+    </footer>
+  </body>
+</html>
