@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Coding Interview Questions (Comment + Code Style)</title>
+  </head>
+  <body>
+    <!--? Introduction to HTML ?-->
+    <!--* Q1. Create a basic HTML5 page structure. *-->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Sample Page</title>
+      </head>
+      <body>
+        <h1>Welcome</h1>
+        <p>This is a sample page.</p>
+      </body>
+    </html>
+
+    <!--* Q2. Create a page that displays an image with alternate text. *-->
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <img src="nature.jpg" alt="Beautiful Nature" />
+      </body>
+    </html>
+
+    <!--? HTML Structure ?-->
+    <!--* Q3. Build a simple webpage with a header, navigation links, main content, and footer using semantic tags. *-->
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <header>
+          <h1>My Website</h1>
+        </header>
+        <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+        <main>
+          <h2>Welcome</h2>
+          <p>This is the main section.</p>
+        </main>
+        <footer>
+          <p>&copy; 2025</p>
+        </footer>
+      </body>
+    </html>
+
+    <!--? HTML Syntax ?-->
+    <!--* Q4. Write HTML code that displays a numbered list of three programming languages. *-->
+    <ol>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+    </ol>
+
+    <!--* Q5. Create a hyperlink that opens Google in a new tab. *-->
+    <a href="https://google.com" target="_blank">Open Google</a>
+
+    <!--? HTML Headings ?-->
+    <!--* Q6. Write HTML code to display a main title and two subheadings using headings. *-->
+    <h1>Web Development Tutorial</h1>
+    <h2>Frontend Development</h2>
+    <h3>HTML Basics</h3>
+
+    <!--* Q7. Create a page with a h1 tag. *-->
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <h1>Portfolio of Ayush</h1>
+      </body>
+    </html>
+
+    <!--? HTML Paragraph, BR, HR ?-->
+    <!--* Q8. Display two lines inside the same paragraph using <br> tag. *-->
+    <p>Hello everyone!<br />Welcome to my website.</p>
+
+    <!--* Q9. Write HTML to separate two sections using a horizontal line. *-->
+    <p>Section One</p>
+    <hr />
+    <p>Section Two</p>
+
+    <!--? HTML Text Formatting ?-->
+    <!--* Q10. Create a paragraph with bold, italic and highlighted text. *-->
+    <p>
+      Learning <strong>HTML</strong> is <em>very</em> <mark>important</mark>!
+    </p>
+
+    <!--* Q11. Display H₂O and X² + Y² in HTML. *-->
+    <p>Water formula: H<sub>2</sub>O</p>
+    <p>Equation: x<sup>2</sup> + y<sup>2</sup></p>
+
+    <!--? HTML Hyperlinks ?-->
+    <!--* Q12. Create a link to https://www.wikipedia.org that opens in a new tab. *-->
+    <a href="https://www.wikipedia.org" target="_blank">Go to Wikipedia</a>
+
+    <!--* Q13. Make a hyperlink that sends an email to hello@example.com. *-->
+    <a href="mailto:hello@example.com">Send Email</a>
+
+    <!--? Path Types in HTML ?-->
+    <!--* Q14. Display an image using an absolute path. *-->
+    <img src="https://example.com/assets/logo.png" alt="Logo" />
+
+    <!--* Q15. Display an image using a relative path inside a folder named 'images'. *-->
+    <img src="images/photo.jpg" alt="Photo" />
+
+    <!-- HTML Images -->
+    <!--* Q16. Display an image named 'flower.jpg' located in an 'images' folder with alt text “Red Flower”. *-->
+    <img src="images/flower.jpg" alt="Red Flower" />
+
+    <!--* Q17. Add an image that lazy loads. *-->
+    <img src="pic.jpg" alt="Picture" loading="lazy" />
+
+    <!--? HTML SVGs ?-->
+    <!--* Q18. Embed a simple red circle using inline SVG. *-->
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" fill="red" />
+    </svg>
+
+    <!--* Q19. Use the <img> tag to display an external SVG file named 'logo.svg'. *-->
+    <img src="logo.svg" alt="Logo" />
+
+    <!--? HTML Lists ?-->
+    <!--* Q20. Create an unordered list of three fruits using square bullets. *-->
+    <ul type="square">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </ul>
+
+    <!--* Q21. Build a numbered list of programming languages starting from 5. *-->
+    <ol start="5">
+      <li>Python</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <!--* Q22. Create a description list to explain CPU and RAM. *-->
+    <dl>
+      <dt>CPU</dt>
+      <dd>Central Processing Unit</dd>
+      <dt>RAM</dt>
+      <dd>Random Access Memory</dd>
+    </dl>
+
+    <!--? HTML Forms ?-->
+    <!--* Q23. Create a form with text, email, and password fields and a submit button. *-->
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="password" /><br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+
+    <!--* Q24. Build a form with radio buttons for selecting gender and a reset button. *-->
+    <form>
+      <p>Gender:</p>
+      <input type="radio" id="m" name="gender" value="male" />
+      <label for="m">Male</label><br />
+      <input type="radio" id="f" name="gender" value="female" />
+      <label for="f">Female</label><br /><br />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <!--? HTML Tables ?-->
+    <!--* Q25. Create a 2×2 table containing names and ages. *-->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>22</td>
+      </tr>
+    </table>
+
+    <!--* Q26. Create a table where the first header spans two columns. *-->
+    <table border="1">
+      <tr>
+        <th colspan="2">Student Detail</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Alice</td>
+      </tr>
+    </table>
+
+    <!--? HTML Media ?-->
+    <!--* Q27. Embed an audio file named "music.mp3" using controls. *-->
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!--* Q28. Embed a video named "movie.mp4" with controls and width of 320px. *-->
+    <video width="320" controls>
+      <source src="movie.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!--* Q29. Embed a PDF file named "resume.pdf". *-->
+    <embed src="resume.pdf" width="500" height="400" />
+
+    <!--? HTML Semantic ?-->
+    <!--* Q30. Build a webpage using <header>, <nav>, <main>, and <footer> tags. *-->
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <header>
+          <h1>My Blog</h1>
+        </header>
+        <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+        <main>
+          <article>
+            <h2>First Post</h2>
+            <p>This is an article section.</p>
+          </article>
+        </main>
+        <footer>
+          <p>Copyright 2025</p>
+        </footer>
+      </body>
+    </html>
+
+    <!--* Q31. Use the <aside> tag to display a sidebar with related links. *-->
+    <aside>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">HTML Tutorial</a></li>
+        <li><a href="#">CSS Guide</a></li>
+      </ul>
+    </aside>
+
+    <!--? HTML SEO ?-->
+    <!--* Q32. Add appropriate SEO tags to the <head> section of a webpage titled “Learn HTML”. *-->
+    <head>
+      <title>Learn HTML – Complete Guide</title>
+      <meta
+        name="description"
+        content="Step-by-step guide to learn HTML for beginners."
+      />
+      <link rel="canonical" href="https://example.com/learn-html" />
+    </head>
+
+    <!--* Q33. Create an image tag optimized for SEO. *-->
+    <img src="web-development.jpg" alt="Web Development illustration" />
+  </body>
+</html>

@@ -1,93 +1,70 @@
-HTML Tables :-
+HTML TABLES :-
 ==============
--> Purpose:
- - HTML tables are used to organize and present data in rows and columns.
- - Ideal for tabular data: pricing, schedules, product listings, reports.
+-> Overview:
+ - Tables are used to display data in rows and columns.
+ - Built using the <table> tag with nested elements for headers, rows, and cells.
 
--> Basic Structure
+-> Core Tags:
+ - <table> : Defines the table container.
+ - <tr> : Table row (table row).
+ - <th> : Table header cell (bold + centered by default).
+ - <td> : Table data cell.
+
+-> Optional Tags:
+ - <caption> : Title for the table.
+ - <thead> : Groups header rows.
+ - <tbody> : Groups body rows.
+ - <tfoot> : Groups footer rows.
+
+ - Syntax
    <table>
-     <tr>         <!-- Table Row -->
-       <th>       <!-- Table Header (bold & centered) -->
-       <td>       <!-- Table Data Cell -->
+     <tr>
+       <th>Header 1</th>
+       <th>Header 2</th>
+     </tr>
+     <tr>
+       <td>Data 1</td>
+       <td>Data 2</td>
+     </tr>
    </table>
 
 -> Example:
-   <table>
-     <tr>
-       <th>Name</th>
-       <th>Age</th>
-     </tr>
-     <tr>
-       <td>Ayush</td>
-       <td>22</td>
-     </tr>
-   </table>
-
--> Important Tags
- - <table>:
-   • The main table wrapper.
-
- - <tr> (Table Row):
-   • Represents a row in the table.
-
- - <th> (Table Header):
-   • Bold, centered header cell.
-
- - <td> (Table Data):
-   • Standard data cell.
-
--> Advanced Structure (Semantic Elements)
- - <thead>:
-   • Groups all header rows.
-   • Helps accessibility and SEO.
-
- - <tbody>:
-   • Contains the body rows (main content).
-
- - <tfoot>:
-   • Used for footers: totals, summaries, etc.
-
--> Example:
-   <table>
-     <thead>  
-      <tr><th>Item</th><th>Price</th></tr>
+   <table border="1">
+     <caption>Student Marks</caption>
+     <thead>
+       <tr>
+         <th>Name</th>
+         <th>Math</th>
+         <th>Science</th>
+       </tr>
      </thead>
      <tbody>
-       <tr><td>Book</td><td>₹250</td></tr>
-       <tr><td>Pen</td><td>₹20</td></tr>
+       <tr>   
+         <td>John</td>
+         <td>80</td>
+         <td>90</td>
+       </tr>
+       <tr>
+         <td>Jane</td>
+         <td>85</td>
+         <td>88</td>
+       </tr>
      </tbody>
-     <tfoot>
-       <tr><td>Total</td><td>₹270</td></tr>
-     </tfoot>
    </table>
 
--> Useful Table Attributes
- - border:
-   • Adds border to table and cells
-   • Example: <table border="1">
+-> Attributes:
+ - border: Adds border to table.
+ - rowspan: Cell spans multiple rows.
+ - colspan: Cell spans multiple columns.
+ - width & height: Dimension of table or cells.
 
- - colspan:
-   • Merges cells horizontally across columns
-   • Example: <td colspan="2">Merged</td>
+-> Best Practices:
+ - Use <thead>, <tbody>, <tfoot> to separate structure from styling.
+ - Avoid using tables for page layout (use CSS grid/flex instead).
+ - Provide <caption> and <th> for accessibility.
+ - Keep table layouts simple and readable.
 
- - rowspan:
-   • Merges cells vertically across rows
-   • Example: <td rowspan="2">Merged</td>
-
--> Accessibility Best Practices
- - Use <caption>:
-   • Describes the table content
-   • Example: <caption>User Data Table</caption>
-
- - Use scope in <th>:
-   • <th scope="col"> → for column headers
-   • <th scope="row"> → for row headers
-
- - Structure matters:
-   • <thead>, <tbody>, and <tfoot> help screen readers
-   • Keep markup semantic and meaningful
-
--> Summary
- - Use tables only for data (not layout!)
- - Maintain semantic structure with thead/tbody/tfoot
- - Ensure accessibility using <caption> and scope attributes
+-> Expert Tips:
+ - Style tables using CSS to add zebra-stripes, hover effects, and borders.
+ - Combine colspan and rowspan carefully to avoid broken structures.
+ - Make tables responsive using overflow scroll or display blocks.

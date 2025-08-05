@@ -1,82 +1,111 @@
-HTML TEXT :-
-============
--> HTML Headings:
- - HTML provides six levels of headings: <h1> to <h6>.
- - <h1> is the most important (largest), and <h6> is the least important (smallest).
- - Headings define content hierarchy and are used by search engines and screen readers to understand page structure.
- - Ideally, only one <h1> should be used per page for SEO purposes.
+HTML HEADINGS :-
+================
+-> Overview:
+ - HTML headings are used to define titles, section headings, and subheadings on a webpage.
+ - They range from <h1> to <h6>, where <h1> is the highest (most important) and <h6> is the lowest.
 
- - Example:
-   <h1>Main Heading</h1>
-   <h2>Subheading</h2>
-   <h3>Sub-subheading</h3>
-   ...
-   <h6>Smallest Heading</h6>
+-> Purpose:
+ - Provide structure and hierarchy to content.
+ - Help search engines and users understand the outline of the webpage.
+ - Improve readability and SEO.
 
- - Best Practices:
-   • Use headings in a logical, nested order (h1 > h2 > h3...).
-   • Avoid skipping heading levels (e.g., don't jump from h1 to h4).
-   • Use headings to reflect the content outline for SEO and accessibility.
+ - Syntax
+   <h1> Main Heading </h1>
+   <h2> Sub Heading </h2>
+   <h3> Section Heading </h3>
+   <h4> Sub-section Heading </h4>
+   <h5> Minor Heading </h5>
+   <h6> The Least Important Heading </h6>
 
--> Paragraph, Horizontal Rule, Line Break:
- - <p> (Paragraph):
-   • Defines a block of text content.
-   • Has default margin spacing before and after.
-   • Can include inline elements like <strong>, <a>, <em>, etc.
-   • Example:
-     <p>This is a paragraph.</p>
+-> Example:
+   <h1>My Portfolio</h1>
+   <h2>Projects</h2>
+   <h3>Web Design</h3>
 
- - <hr> (Horizontal Rule):
-   • Creates a thematic break or separation between sections.
-   • Renders a horizontal line.
-   • Self-closing in HTML5; does not require a closing tag.
-   • Example:
-     <hr>
+-> Best Practices:
+ - Use <h1> only once per page for the main title.
+ - Maintain a logical order (don’t jump from <h1> to <h4> directly).
+ - Use headings to improve SEO by including keywords.
+ - Do not use headings just to make text bigger (use CSS instead).
 
- - <br> (Line Break):
-   • Inserts a manual line break inside text or a paragraph.
-   • Commonly used in poetry, addresses, or line-by-line content.
-   • Should not be used for layout purposes—use CSS instead.
-   • Example:
-     Line 1<br>Line 2
+-> Expert Tips:
+ - Headings improve screen reader accessibility.
+ - Combine headings with semantic tags like <section> or <article> for better structure.
+ - Avoid styling headings inline; use CSS classes.
 
--> Text Formatting Tags:
- - Used to style or add semantic meaning to specific parts of inline text.
 
- - <b>: Bold text (purely visual)  
-   Example: <b>This is bold</b>
+HTML PARAGRAPH, HR TAG, BR TAG :-
+=================================
+-> Overview:
+ - HTML paragraphs, line breaks, and horizontal rules are basic text formatting elements.
+ - <p> defines a paragraph, <br> adds a single line break, and <hr> inserts a horizontal line.
 
- - <strong>: Important/strong emphasis (semantic + visual)  
-   Example: <strong>Important!</strong>
+-> Paragraph <p>:
+ - Used to display blocks of text.
+ - Automatically adds space above and below.
 
- - <i>: Italic text (purely visual)  
-   Example: <i>This is italic</i>
+ - Syntax
+   <p>This is a paragraph of text.</p>
 
- - <em>: Emphasized text (semantic + visual)  
-   Example: <em>Very important</em>
+-> Line Break <br>:
+ - Inserts a line break without starting a new paragraph.
+ - Self-closing tag.
 
- - <mark>: Highlights text (usually yellow background)  
-   Example: <mark>Highlighted</mark>
+ - Syntax
+   <br>
 
- - <u>: Underlines text (purely visual)  
-   Example: <u>Underlined</u>
+-> Horizontal Rule <hr>:
+ - Creates a horizontal line to separate content.
+ - Self-closing tag (void element).
 
- - <small>: Displays text smaller than surrounding text  
-   Example: <small>This is small</small>
+ - Syntax
+   <hr>
 
- - <del>: Represents deleted/removed text (strikethrough)  
-   Example: <del>Old price</del>
+-> Example:
+   <p>Welcome to my website.</p>
+   <p>This is the second paragraph.<br>This is a new line in the same paragraph.</p>
+   <hr>
+   <p>Another section begins here.</p>
 
- - <ins>: Represents inserted/added text (underlined by default)  
-   Example: <ins>New addition</ins>
+-> Best Practices:
+ - Use <p> for paragraphs instead of multiple <br> tags.
+ - Use <br> only when a real single line break is needed (e.g., address).
+ - <hr> can be styled using CSS (width, color, height).
 
- - <sub>: Subscript text (used in formulas, e.g., H₂O)  
-   Example: H<sub>2</sub>O
+-> Expert Tips:
+ - Avoid stacking <br><br><br> — use margin/padding via CSS.
+ - <hr> can also be used as a visual divider in newsletters or blogs.
 
- - <sup>: Superscript text (used in exponents, e.g., E = mc²)  
-   Example: E = mc<sup>2</sup>
 
--> Tips:
- - Use <strong> and <em> when you want to add **meaning** as well as style.
- - Screen readers emphasize <strong> and <em> but usually ignore <b> and <i>.
- - Use semantic formatting to improve accessibility and SEO.
+HTML TEXT FORMATTING :-
+=======================
+-> Overview:
+ - HTML provides formatting tags to style text such as bold, italic, underline, deleted text, inserted text, etc.
+ - These tags are mostly inline and used inside paragraphs.
+
+-> Common Formatting Tags:
+ - <b> / <strong> : Bold text  (strong indicates importance)
+ - <i> / <em> : Italic text  (em indicates emphasis)
+ - <u> : Underlined text
+ - <mark> : Highlighted/marked text
+ - <sup> : Superscript (e.g., x<sup>2</sup>)
+ - <sub> : Subscript (e.g., H<sub>2</sub>O)
+ - <del> : Deleted text (strikethrough)
+ - <ins> : Inserted text (usually underlined)
+
+-> Example:
+   <p>This is <b>bold</b> and <strong>very important</strong> text.</p>
+   <p>This is <i>italic</i> and <em>emphasized</em> text.</p>
+   <p>Water formula is H<sub>2</sub>O and x<sup>2</sup> + y<sup>2</sup>.</p>
+   <p><del>Old price: $100</del> <ins>New price: $80</ins></p>
+   <p>This is <mark>highlighted text</mark>.</p>
+
+-> Best Practices:
+ - Use <strong> and <em> instead of <b> and <i> for semantic meaning.
+ - Do not use formatting tags for visual styling only—use CSS classes instead.
+ - Avoid overusing text formatting which can affect readability.
+
+-> Expert Tips:
+ - Combine formatting tags with CSS for advanced styling.
+ - <ins> and <del> are useful when showing changes in documents/products.
+ - Use <mark> for search-result highlighting effects.

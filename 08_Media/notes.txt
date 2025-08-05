@@ -1,121 +1,51 @@
 HTML MEDIA :-
-=============
--> Purpose:
- - HTML provides built-in tags to embed multimedia (audio, video, and external web pages).
- - Eliminates the need for plugins like Flash.
- - Ensures compatibility across modern browsers and devices.
+==============
+-> Overview:
+ - HTML supports various media elements like audio, video, and embedded content to enhance user engagement.
+ - Commonly used tags: <audio>, <video>, <source>, <embed>, <iframe>.
 
+-> <audio> Tag:
+ - Used to embed sound/music/audio files.
+ - Attributes: controls (show play UI), autoplay, loop, muted.
 
-<audio> Tag :-
---------------
--> Usage:
- - Embeds sound content (music, narration, etc.)
-
--> Syntax:
+ - Syntax
    <audio controls>
-     <source src="sound.mp3" type="audio/mpeg">
-     Your browser does not support the audio tag.
+     <source src="song.mp3" type="audio/mpeg">
+     <source src="song.ogg" type="audio/ogg">
+     Your browser does not support the audio element.
    </audio>
 
--> Key Attributes:
- - controls     → Shows play, pause, volume
- - autoplay     → Starts playback automatically
- - loop         → Repeats the audio
- - muted        → Starts muted
- - preload      → How the browser loads audio:
-                  • auto | metadata | none
+-> <video> Tag:
+ - Used to embed video content.
+ - Attributes: controls, width, height, autoplay, loop, muted, poster.
 
--> Supported Formats:
- - MP3  → audio/mpeg
- - WAV  → audio/wav
- - OGG  → audio/ogg
-
--> Best Practice:
- - Use multiple <source> tags for format fallback.
-
-
-<video> Tag :-
---------------
--> Usage:
- - Embeds video directly in the webpage.
-
--> Syntax:
+ - Syntax
    <video width="320" height="240" controls>
      <source src="movie.mp4" type="video/mp4">
+     <source src="movie.webm" type="video/webm">
      Your browser does not support the video tag.
    </video>
 
--> Key Attributes:
- - controls     → Shows playback UI
- - autoplay     → Starts video automatically
- - loop         → Repeats indefinitely
- - muted        → Starts without sound (important for autoplay)
- - poster       → Thumbnail image before playback
- - width/height → Dimensions of video player
+-> <embed> Tag:
+ - Embeds external media like PDFs, Flash, animations, etc.
+ - Self-closing tag.
 
--> Supported Formats:
- - MP4   → video/mp4 (most compatible)
- - WebM  → video/webm
- - OGG   → video/ogg
+ - Syntax
+   <embed src="file.pdf" width="500" height="400">
 
--> Tip:
-   <video autoplay muted loop></video>
-   • Common for background banners
+-> <iframe> Tag:
+ - Embeds another HTML page or content (e.g., YouTube video) inside the page.
 
+ - Syntax
+   <iframe src="https://www.youtube.com/embed/videoID" width="560" height="315"></iframe>
 
-<iframe> Tag :-
----------------
--> Usage:
- - Embeds external content (websites, videos, maps, etc.)
+-> Best Practices:
+ - Always provide controls for better UX.
+ - Use multiple <source> formats for wider browser support.
+ - Avoid autoplay with sound (bad user experience).
+ - Use proper width and height to preserve layout.
 
--> Syntax:
-   <iframe src="https://example.com" width="600" height="400"></iframe>
-
--> Common Use Cases:
- - Embedding YouTube, Vimeo videos
- - Google Maps
- - External forms, dashboards
-
--> Key Attributes:
- - src              → Embedded content URL
- - width / height   → Frame size
- - title            → Accessibility label
- - allowfullscreen  → Enables full-screen mode
- - loading="lazy"   → Defers loading for performance
- - frameborder      → Frame styling (use CSS)
-
--> Example (YouTube):
-   <iframe width="560" height="315"
-     src="https://www.youtube.com/embed/VIDEO_ID"
-     title="YouTube video"
-     frameborder="0"
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-     allowfullscreen>
-   </iframe>
-
--> Security Tip:
-   • Use the `sandbox` attribute for extra security:
-     <iframe sandbox src="..."></iframe>
-   • Restricts scripts and navigation
-
-Summary :-
-----------
- - <audio>:
-   • Embed sound/music
-   • Use multiple <source> tags
-   • Show fallback message
-
- - <video>:
-   • Embed video files directly
-   • Use poster images and controls
-   • Autoplay should be muted
-
- - <iframe>:
-   • Embed external websites/media
-   • Use `title`, `sandbox`, and `loading` attributes responsibly
-
- - Best Practices:
-   • Always include fallback text
-   • Offer multiple media formats
-   • Improve accessibility with title/ARIA
-   • Avoid autoplay unless muted and needed
+-> Expert Tips:
+ - Combine <audio> and <video> with the preload attribute (auto | metadata | none) for performance.
+ - Use CSS to make iframes responsive.
+ - Optimize media file size before embedding to improve load times.

@@ -1,0 +1,53 @@
+HTML SEMANTIC :-
+================
+-> Overview:
+ - Semantic HTML uses tags that clearly describe the **meaning** and **purpose** of the content.
+ - Helps browsers, developers, screen readers, and search engines understand the structure of a webpage.
+
+-> Common Semantic Tags:
+ - <header>       : Defines the top section of a page or section (logo, nav, title).
+ - <nav>          : Contains navigation links.
+ - <main>         : Represents the main content of the page.
+ - <section>      : Groups related content together.
+ - <article>      : Independent, self-contained content (blog post, news article).
+ - <aside>        : Side content like ads, sidebars, tips.
+ - <footer>       : Contains footer content like copyrights, contact info.
+ - <figure> / <figcaption> : Wraps media/content with its caption.
+ - <time>         : Represents a specific time or date.
+
+-> Example:
+   <header>
+     <h1>My Blog</h1>
+     <nav>
+       <a href="home.html">Home</a>
+       <a href="about.html">About</a>
+     </nav>
+   </header>
+
+   <main>
+     <article>
+       <h2>First Blog Post</h2>
+       <p>This is an article example on my blog.</p>
+     </article>
+   </main>
+
+   <footer>
+     <p>&copy; 2025 MyBlog.com</p>
+   </footer>
+
+-> Benefits:
+ - Improves readability of code.
+ - Enhances SEO (search engines understand and rank your content better).
+ - Boosts accessibility for screen readers.
+ - Makes collaboration easier among developers.
+
+-> Best Practices:
+ - Replace generic <div> tags with semantic tags wherever possible.
+ - Use <section> only when logically dividing the document.
+ - Ensure only one <main> tag per page.
+ - Wrap discrete content inside <article> only if it is independent.
+
+-> Expert Tips:
+ - Combine semantic tags for layout instead of using excessive <div> tags (divitis).
+ - Add ARIA roles only when absolutely necessary — semantic tags have implicit roles.
+ - Use semantic tags to clearly separate header, navigation, content, sidebar, and footer.

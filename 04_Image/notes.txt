@@ -1,107 +1,66 @@
 HTML IMAGES :-
 ==============
--> <img> Tag:
- - Used to embed images into a web page.
- - It is a self-closing (void) tag in HTML5.
- - Basic Syntax:
-   <img src="image.jpg" alt="Description">
+-> Overview:
+ - HTML allows you to display images using the <img> tag.
+ - Images make content visually engaging and informative.
+ - The <img> tag is a self-closing (void) element and requires attributes to work properly.
 
--> Common Attributes:
- - src:
-   • Specifies the path or URL of the image.
-   • Required for the image to display.
-   • Example:
-     <img src="logo.png">
+ - Syntax
+   <img src="image_url" alt="description">
 
- - alt:
-   • Text shown if the image cannot be displayed.
-   • Crucial for accessibility (screen readers) and SEO.
-   • Example:
-     <img src="logo.png" alt="Company Logo">
+-> Important Attributes:
+ - src: Specifies the image path or URL.
+ - alt: Provides alternative text if the image fails to load (important for accessibility + SEO).
+ - width / height: Sets the size of the image.
+ - title: Tooltip on hover.
 
- - width and height:
-   • Control the dimensions of the image.
-   • Units are usually in pixels (px) or percentages (%).
-   • Example:
-     <img src="pic.jpg" width="300" height="200">
-
- - title:
-   • Tooltip text shown when hovering over the image.
-   • Example:
-     <img src="pic.jpg" title="My Photo">
-
--> Common Image Formats:
- - JPG (JPEG):
-   • Best for photographs.
-   • Uses lossy compression for smaller file sizes.
-
- - PNG:
-   • Supports transparency.
-   • Lossless compression (better quality, larger size than JPG).
-
- - GIF:
-   • Supports basic animations.
-   • Limited to 256 colors.
-
- - WEBP:
-   • Modern format by Google.
-   • Combines quality with smaller file sizes.
-
- - SVG:
-   • Vector-based image format.
-   • Ideal for logos, icons, and illustrations.
+-> Example:
+   <img src="images/profile.jpg" alt="Profile Photo" width="200" height="200">
+   <img src="https://example.com/logo.png" alt="Company Logo">
 
 -> Best Practices:
- - Always include meaningful alt text for accessibility and SEO.
- - Compress and optimize images before uploading to reduce page load time.
- - Define width and height to avoid layout shifts (CLS).
- - Use modern formats (e.g., WEBP, AVIF) for performance.
- - Organize images into folders (e.g., /images) for project clarity.
+ - Always include an alt attribute for accessibility.
+ - Use optimized compressed images (WebP, JPEG) to speed up websites.
+ - Specify width and height to avoid layout shifts.
+ - Store images in a separate folder (e.g., /images).
+ - Use lazy-loading in modern HTML (loading="lazy").
+
+-> Expert Tips:
+ - Use CSS to control image styling (borders, radius, object-fit).
+ - Responsive images: use <picture> tag or srcset for different screen sizes.
+ - Keep file names meaningful (e.g., profile-pic.jpg instead of img001.jpg).
 
 
 HTML SVGs :-
 ============
--> What is SVG?
+-> Overview:
  - SVG stands for Scalable Vector Graphics.
- - It's an XML-based vector image format for 2D graphics.
- - Fully scalable without losing quality.
- - Ideal for icons, logos, illustrations, and charts.
+ - It is an XML-based vector image format used to display graphics that scale without losing quality.
+ - Ideal for icons, logos, illustrations.
 
--> Advantages of SVG:
- - Scales cleanly at any resolution (ideal for responsive design).
- - Small file size for simple shapes.
- - Can be styled and animated with CSS or JavaScript.
- - Easy to edit manually or via vector design software.
- - Supported in all major browsers.
+ - Syntax
+   <svg width="100" height="100">
+     <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+   </svg>
 
--> Embedding SVG in HTML:
+-> Ways to Use SVG in HTML:
+ - Inline SVG code in HTML.
+ - Use <img> tag to load an external SVG.
+   Syntax: <img src="icon.svg" alt="Icon">
+ - Use <object>, <embed> or CSS background.
 
- 1. Inline SVG (inside HTML):
-   - Allows direct manipulation with CSS/JS.
-   - Example:
-     <svg width="100" height="100">
-       <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-     </svg>
-
- 2. As an <img> tag:
-   - Easiest method.
-   - Example:
-     <img src="icon.svg" alt="Vector Icon">
-   - Note: Styling and animation not possible this way.
-
--> When to Use SVG:
-
- ✅ Use SVG for:
-   • Logos
-   • Icons
-   • Line art
-   • Charts and Diagrams
-
- ❌ Avoid SVG for:
-   • Photographic images (use JPG, PNG, or WEBP instead)
+-> Example:
+   <svg width="120" height="120" viewBox="0 0 100 100">
+     <rect x="10" y="10" width="80" height="80" fill="green"/>
+   </svg>
 
 -> Best Practices:
- - Clean and optimize SVG code (remove unnecessary elements).
- - Use tools like SVGO to compress SVG files.
- - Include <title> and <desc> inside inline SVGs for accessibility.
- - Style and animate SVGs with CSS for rich interactive visuals.
+ - Use SVGs for logos and icons to ensure crisp quality on all devices.
+ - Keep SVGs lightweight and minify when possible.
+ - Don’t forget to add alt text when using <img>.
+ - Use CSS to style inline SVG elements.
+
+-> Expert Tips:
+ - You can animate SVGs using CSS or JavaScript.
+ - Use paths and groups (<path>, <g>) for complex illustrations.
+ - SVGs are resolution-independent and ideal for responsive design.

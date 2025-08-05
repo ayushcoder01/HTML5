@@ -1,347 +1,291 @@
--------------------------------
-Topic: Intro, Structure, Syntax
--------------------------------
-Q1. What is HTML and why is it called a markup language?  
-Ans. HTML stands for HyperText Markup Language. It is used to structure web content. It’s called a markup language because it uses "tags" to annotate and define the structure of text and elements in a web document.
+INTRODUCTION TO HTML :-
+=======================
+Q1. What is HTML?
+Ans. HTML (HyperText Markup Language) is a standard markup language used to create and structure web pages. It tells the browser how to display text, images, links, and other content.
 
-Q2. What is the purpose of <!DOCTYPE html>?  
-Ans. It declares that the document is written in HTML5 and helps the browser render the page in standards-compliant mode instead of quirks mode.
+Q2. Is HTML a programming language? Why or why not?
+Ans. No, HTML is not a programming language. It is a declarative markup language that describes the structure of a webpage and does not contain logic or algorithms.
 
-Q3. A developer forgets to include <!DOCTYPE html>. What could happen?  
-Ans. The browser may enter "quirks mode", where it tries to behave like older browsers. This can lead to incorrect or inconsistent rendering of the webpage across different browsers.
+Q3. What does “HyperText” mean in HTML?
+Ans. HyperText refers to text that contains links (hyperlinks) that connect one web page to another on the Internet.
 
-Q4. What is the difference between <head> and <body> tags?  
-Ans. <head> contains metadata, links to stylesheets, scripts, and other non-visible resources. <body> contains all the content that is displayed on the webpage (text, images, forms, etc.).
+Q4. What is the purpose of HTML?
+Ans. HTML structures the content of a webpage — including headings, paragraphs, links, multimedia, forms, and layout of the interface.
 
-Q5. Explain the role of the <html> tag.  
-Ans. The <html> tag wraps the entire HTML document. It is the root element that contains both the <head> and <body> sections.
+Q5. What is the difference between HTML and HTML5?
+Ans. HTML5 is the latest version of HTML that adds semantic elements, audio/video support, SVG, canvas, localStorage, and better form controls compared to older HTML versions.
 
-Q6. What are HTML elements?  
-Ans. An HTML element includes a start tag, content (optional), and an end tag. Example: <h1>Hello</h1>
 
-Q7. What is an empty element? Give an example.  
-Ans. Empty elements do not have any content or closing tags. Examples include <br>, <img>, <hr>, <input>. They are self-closing.
+HTML STRUCTURE :-
+=================
+Q6. Explain the basic structure of an HTML document.
+Ans. A basic HTML document contains:
+ - `<!DOCTYPE html>` declaration
+ - `<html>` root tag
+ - `<head>` tag containing meta-information, title
+ - `<body>` tag containing all visible content shown to users
 
-Q8. What is an attribute in HTML?  
-Ans. An attribute provides additional information about an element. For example: <a href="https://example.com">Visit</a> – the `href` is an attribute.
+Q7. What is the role of <!DOCTYPE html>?
+Ans. It is a declaration that tells the browser to use HTML5 standards while rendering the page.
 
-Q9. Can we place multiple attributes in a tag? How?  
-Ans. Yes. Multiple attributes can be added by separating them with spaces inside the opening tag. Example: <input type="text" placeholder="Enter name" required>
+Q8. What is the difference between <head> and <body>?
+Ans. `<head>` contains metadata and settings that are not displayed to the user, whereas `<body>` contains all visible content shown on the webpage.
 
-Q10. How does a browser know where HTML starts and ends?  
-Ans. Through the use of <html> as the root tag and </html> as the closing tag. Everything in between is considered part of the HTML document.
+Q9. Why should we include the lang attribute in <html>?
+Ans. The `lang` attribute specifies the language of the webpage, improves accessibility, and helps search engines understand and index content correctly.
 
-Q11. Why should we always use proper HTML syntax?  
-Ans. Proper syntax ensures browser compatibility, accessibility, easier maintenance, and better SEO. It also prevents layout issues caused by misinterpreted HTML.
+Q10. List any two semantic elements introduced in HTML5.
+Ans. Examples: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`.
 
-Q12. Why is it important to close tags properly in HTML?  
-Ans. Unclosed tags can break the layout, lead to unexpected rendering issues, and make debugging the HTML much more difficult.
 
-----------------
-Topic: HTML Text
-----------------
-Q1. What is the purpose of HTML heading tags?  
-Ans. Heading tags (<h1> to <h6>) are used to define headings and subheadings on a web page. <h1> represents the most important heading, while <h6> is the least. These tags help structure content hierarchically and improve readability and SEO.
+HTML SYNTAX :-
+==============
+Q11. What is the correct syntax for an HTML element?
+Ans. `<tagname attribute="value">content</tagname>`
 
-Q2. Can we have multiple <h1> tags on a page?  
-Ans. Yes, HTML5 allows multiple <h1> tags, especially within sections or articles. However, for semantic clarity and SEO best practices, it is recommended to have one primary <h1> representing the main topic of the page.
+Q12. What are void/self-closing HTML tags? Give examples.
+Ans. Tags that do not need a closing tag are called void tags. E.g., `<img>`, `<br>`, `<hr>`, `<input>`.
 
-Q3. What does the <p> tag do in HTML?  
-Ans. The <p> tag defines a paragraph of text. It creates a block of text with automatic spacing (margin) before and after, separating it from other elements.
+Q13. What is the purpose of the alt attribute on an <img> tag?
+Ans. It provides alternative text when the image fails to load and improves accessibility for screen readers.
 
-Q4. What is the difference between <br> and <hr>?  
-Ans. <br> inserts a line break within content (like breaking a line in a poem), while <hr> creates a horizontal line used to separate sections or thematic breaks in content. Both are self-closing tags.
+Q14. Differentiate between global and specific attributes.
+Ans. Global attributes (like id, class, hidden, data-*) can be used on almost any HTML tag, while specific attributes are applicable only to particular tags (like href for `<a>`, src for `<img>`).
 
-Q5. When would you use <br> instead of <p>?  
-Ans. Use <br> for breaking lines within a single block of text (e.g., address, poetry). Use <p> when starting a new paragraph or thought block.
+Q15. Why is it important to properly nest HTML tags?
+Ans. Proper nesting ensures that the browser interprets the document correctly and avoids layout errors, especially when multiple tags are combined.
 
-Q6. What is the difference between <b> and <strong>?  
-Ans. <b> visually bolds text with no semantic meaning. <strong> also makes text bold but adds semantic importance, helping screen readers emphasize the content.
 
-Q7. Why is <strong> preferred over <b> for accessibility?  
-Ans. Screen readers interpret <strong> as important content, providing additional meaning for users with disabilities. <b> is purely visual and not meaningful to assistive technologies.
+HTML HEADINGS :-
+================
+Q16. What are HTML heading tags?
+Ans. HTML provides six heading tags <h1> to <h6> used to define headings and sub-headings. <h1> is the most important and largest, while <h6> is the least important and smallest.
 
-Q8. What is the difference between <i> and <em>?  
-Ans. <i> makes text italic without semantic emphasis. <em> italicizes text but also adds meaning—used to emphasize a word or phrase contextually. Screen readers emphasize <em> content.
+Q17. Why is <h1> tag important for SEO?
+Ans. Search engines use the <h1> tag to understand the main topic of the page. It should describe the page’s primary content and be used only once.
 
-Q9. What does the <mark> tag do?  
-Ans. The <mark> tag highlights text (usually with a yellow background) to indicate relevance or matches in search results.
+Q18. Can you skip heading tags (e.g., use <h4> after <h1> directly)?
+Ans. Technically yes, but it’s not recommended. Heading tags should follow a logical hierarchy for better accessibility and SEO.
 
-Q10. What is the purpose of <sub> and <sup> tags?  
-Ans. <sub> displays subscript text (e.g., H<sub>2</sub>O), and <sup> displays superscript text (e.g., E = mc<sup>2</sup>). They’re commonly used in math and science notations.
+Q19. What is the difference between <title> in <head> and <h1> in <body>?
+Ans. <title> appears in the browser tab and search results, while <h1> is a visible main heading in the content area.
 
-Q11. How does <del> differ from <ins>?  
-Ans. <del> is used to show deleted text (strikethrough), while <ins> is used to show inserted/added content (often underlined). These tags help track content changes and edits.
+Q20. How many <h1> tags should be used on a single page?
+Ans. Ideally only one <h1> tag per page to define the main heading clearly for users and search engines.
 
-Q12. Why should we prefer semantic tags like <em>, <strong>, <ins>, etc., over purely visual ones?  
-Ans. Semantic tags help improve accessibility, SEO, and document structure. They allow screen readers and search engines to interpret the meaning behind the styling, not just the appearance.
 
----------------------
-Topic: HTML Hyperlink
----------------------
-Q1. What is the purpose of the <a> (anchor) tag in HTML?  
-Ans. The <a> tag is used to create hyperlinks, allowing users to navigate to other pages, files, or external websites.
+HTML PARAGRAPH / <br> / <hr> :-
+===============================
+Q21. What does the <p> tag do in HTML?
+Ans. The <p> tag defines a paragraph of text and automatically adds space above and below the content.
 
-Q2. What is the most important attribute used with <a>?  
-Ans. The `href` attribute specifies the destination URL of the link.
+Q22. What is the difference between <br> and <p>?
+Ans. <br> inserts a single line break, while <p> starts a new paragraph block.
 
-Q3. What are absolute and relative paths in HTML?  
-Ans.  
-- Absolute path: Full URL to a resource (e.g., https://example.com/page.html).  
-- Relative path: File path relative to the current page (e.g., ./about.html or ../images/photo.jpg).
+Q23. What is the <hr> tag used for?
+Ans. <hr> stands for horizontal rule and creates a horizontal line divider between content sections.
 
-Q4. What happens if you use an <a> tag without the href attribute?  
-Ans. It will not function as a hyperlink. It may still be styled like a link but won’t navigate anywhere.
+Q24. Name one best practice when using <br> tags.
+Ans. Avoid using multiple <br> tags for spacing; use CSS margins/padding instead.
 
-Q5. What does `target="_blank"` do?  
-Ans. It opens the linked document in a new tab or window.
-
-Q6. Why should you use `rel="noopener noreferrer"` with `target="_blank"`?  
-Ans. To improve security and prevent the new tab from accessing the `window.opener` object of the original page.
-
--------------------------
-Topic: HTML Images & SVGs 
--------------------------
-Q1. What is the purpose of the <img> tag in HTML?
-Ans. The <img> tag is used to embed images into a webpage. It requires the `src` attribute to specify the image path and `alt` for descriptive text.
-
-Q2. What is the role of the `alt` attribute in images?
-Ans. The `alt` attribute provides alternative text if the image fails to load and improves accessibility for screen readers and SEO.
-
-Q3. What is the difference between JPG and PNG formats?
-Ans.
-• JPG: Best for photos, smaller file size, uses lossy compression.
-• PNG: Best for graphics needing transparency, uses lossless compression.
-
-Q4. What is WEBP and why is it used?
-Ans. WEBP is a modern image format that provides both high quality and better compression than JPG or PNG, improving page speed.
-
-Q5. What happens if you don't set the width and height attributes for an image?
-Ans. The browser loads the image in its original size, which may cause layout shifts or slow rendering due to reflows.
-
-Q6. How can you embed an SVG in HTML?
-Ans.
-• Inline: Using the <svg> tag directly in HTML for full styling and animation control.
-• External: Using <img src="icon.svg">, but this limits styling and interaction.
-
-Q7. Why would you use SVG over PNG or JPG?
-Ans. SVG is resolution-independent, smaller in size for simple graphics, and scalable without losing quality — ideal for logos and icons.
-
-Q8. Can SVGs be animated?
-Ans. Yes, SVGs can be animated using CSS or JavaScript when embedded inline.
-
-Q9. Is the <img> tag a block-level or inline element?
-Ans. The <img> tag is an inline element by default.
-
-Q10. Can an image be a hyperlink?
-Ans. Yes, wrap the <img> inside an <a> tag:
-    <a href="https://example.com"><img src="logo.png" alt="Logo"></a>
-
------------------
-Topic: HTML Lists
------------------
-Q1. What are the different types of lists in HTML?
-Ans. 
-- Unordered List (<ul>)
-- Ordered List (<ol>)
-- Description List (<dl>)
-
-Q2. What is the difference between <ul> and <ol>?
-Ans. 
-- <ul>: Displays list items with bullet points.
-- <ol>: Displays list items in a numbered order.
-
-Q3. Can lists be nested inside one another?
-Ans. 
-Yes. You can nest <ul> or <ol> inside another <li> to create multi-level or hierarchical lists.
-
-Q4. What are the default styles for <ul> and <ol>?
-Ans. 
-- <ul>: Disc bullets.
-- <ol>: Numbers (1, 2, 3,...)
-
-Q5. What is the purpose of the <dl>, <dt>, and <dd> tags in HTML?
-Ans. 
-- <dl>: Description list container.
-- <dt>: Defines the term/name.
-- <dd>: Provides the description of the term.
-- Useful for FAQs, glossaries, or key-value data pairs.
-
-Q6. What attributes can be used with <ol>?
-Ans.
-- type: Sets the numbering style (e.g., "1", "A", "a", "I", "i").
-- start: Sets the starting value of the list.
-- reversed: Reverses the numbering order.
-
-Q7. Is the type attribute still used in <ul>?
-Ans. 
-- Technically, yes, but it is **deprecated** in HTML5.
-- It's recommended to use CSS (`list-style-type`) instead.
-
-Q8. Why are lists important for accessibility?
-Ans. 
-- Lists provide semantic structure, making it easier for screen readers to interpret grouped content.
-- They help visually impaired users understand hierarchy and steps more clearly.
-
------------------
-Topic: HTML Forms
------------------
-Q1. What is the purpose of the <form> tag in HTML?
-Ans. 
-- The <form> tag is used to collect user input and send it to a server for processing.
-- It wraps input elements like text fields, buttons, checkboxes, etc.
-
-Q2. What are the main attributes of the <form> tag?
-Ans. 
-- action: Specifies the URL where the form data will be sent.
-- method: Defines the HTTP method to be used (GET or POST).
-- enctype: Specifies how the form data should be encoded (e.g., multipart/form-data for file uploads).
-- autocomplete: Enables or disables browser autofill.
-- novalidate: Skips built-in HTML5 validation.
-
-Q3. What is the difference between GET and POST methods?
-Ans. 
-- GET:
-  • Appends form data to the URL as query parameters.
-  • Data is visible in the browser address bar.
-  • Not secure for sensitive information.
-  • Limited data length.
-  • Useful for search and filtering.
-
-- POST:
-  • Sends data inside the request body.
-  • Data is not visible in the URL.
-  • More secure and allows larger payloads.
-  • Preferred for login, registration, and confidential data.
-
-Q4. What is the use of the `name` attribute in form elements?
-Ans. 
-- It acts as the key in the key-value pair sent to the server.
-- Without `name`, the input's value will not be included in the submission.
-- Example: <input name="username" value="ayush">
-
-Q5. What is the use of the `label` tag?
-Ans. 
-- It associates a text label with a form control.
-- Improves accessibility for screen readers and users.
-- Clicking the label focuses/selects the related input.
-- Use the `for` attribute matching the input’s `id`.
-
-Q6. What is HTML5 form validation?
-Ans. 
-- HTML5 provides built-in validation without JavaScript.
-- It uses attributes such as:
-  • required → Makes field mandatory
-  • type → Validates format (e.g., email, number)
-  • pattern → Regex pattern for input
-  • minlength, maxlength → Character length control
-  • min, max → Numeric range
-- Validation prevents form submission if criteria are not met.
-
-------------------
-Topic: HTML Tables
-------------------
-Q1. What is the purpose of the <table> tag in HTML?  
-Ans. The <table> tag is used to display data in a tabular format using rows and columns.
-
-Q2. What are the essential tags used in an HTML table?  
-Ans.  
-- <table>: Defines the table  
-- <tr>: Table row  
-- <td>: Table data (cell)  
-- <th>: Table header (bold and centered by default)
-
-Q3. What is the difference between <td> and <th>?  
-Ans. <td> defines standard table cells; <th> defines header cells with bold text and centered alignment.
-
------------------
-Topic: HTML Media
------------------
-Q1. What are the main media elements in HTML5?
-Ans. <audio> and <video> tags are used to embed media content directly into web pages.
-
-Q2. What is the purpose of the <source> tag?
-Ans. It defines multiple media sources for <audio> and <video> to ensure compatibility with different browsers.
-
-Q3. What are common attributes of the <audio> and <video> tags?
-Ans.
-- `controls`: Displays play/pause, volume, etc.
-- `autoplay`: Starts playing media automatically.
-- `loop`: Replays media continuously.
-- `muted`: Mutes audio by default.
-- `preload`: Suggests how media should be loaded (auto, metadata, none).
-
-Q4. What is the <track> tag used for?
-Ans. It provides subtitles, captions, and descriptions for <video> content, improving accessibility.
-
-Q5. Can media elements work without plugins in HTML5?
-Ans. Yes, HTML5 media elements do not require external plugins like Flash. They're natively supported by modern browsers.
-
-Q6. What is the difference between `controls` and `autoplay` attributes?
-Ans. `controls` allows user interaction with playback. `autoplay` starts media automatically but may be blocked unless muted.
-
--------------------------
-Topic: HTML Semantic Tags
--------------------------
-Q1. What are semantic HTML tags?
-Ans. Semantic tags clearly describe their meaning in a human- and machine-readable way. They improve accessibility and SEO.
-
-Q2. Name some commonly used semantic tags in HTML5.
-Ans. <header>, <footer>, <article>, <section>, <aside>, <main>, <nav>, <figure>, <figcaption>, <mark>, <time>.
-
-Q3. What is the difference between <div> and semantic tags?
-Ans. <div> is non-semantic (generic container). Semantic tags have specific meaning and structure (e.g., <article> is a self-contained block).
-
-Q4. What are the benefits of using semantic tags?
-Ans.
-- Improved accessibility
-- Better SEO (search engine understanding)
-- Easier code readability and maintenance
-- Enhanced performance in screen readers
-
-Q5. What is the purpose of the <article> tag?
-Ans. Used for self-contained, reusable content (e.g., blog posts, news articles, forum posts).
-
-Q6. What is the difference between <section> and <div>?
-Ans. <section> represents a standalone part of content with a heading, while <div> is a generic block with no inherent meaning.
-
-Q7. How does the <main> tag work?
-Ans. It represents the dominant content of the <body> of a document and should not be nested inside <article>, <aside>, <footer>, or <header>.
-
----------------
-Topic: HTML SEO
----------------
-Q1. What is SEO in the context of HTML?
-Ans. SEO (Search Engine Optimization) is the practice of optimizing HTML and content to rank higher in search engine results.
-
-Q2. How does HTML impact SEO?
-Ans. Proper use of semantic tags, headings, meta tags, alt attributes, and structured content improves how search engines understand and index a page.
-
-Q3. What HTML tags are most important for SEO?
-Ans. Key tags include:
-- <title>: Sets the page title in search results.
-- <meta>: Provides metadata (e.g., description).
--<h1> to <h6>: Define content structure.
-- <a href>: For linking and crawling.
-- <img alt>: Describes images.
-- <header>, <main>, <footer>: For semantic structure.
-
-Q4. What is the role of the <title> tag in SEO?
-Ans. The <title> tag sets the clickable headline in search engine results. It should be concise, unique, and keyword-rich.
-
-Q5. What does the <meta name="description"> tag do?
-Ans. It provides a brief summary of the page’s content that appears under the title in search results.
-
-Q6. How do heading tags (<h1> to <h6>) affect SEO?
-Ans. Heading tags define the hierarchy of content. Search engines use them to understand the structure and importance of content sections.
-
-Q7. Why is the alt attribute important for SEO?
-Ans. It helps search engines understand image content and improves accessibility. Missing alt text can negatively impact SEO.
-
-Q8. What are some bad SEO practices to avoid in HTML?
-Ans.
-- Keyword stuffing
-- Using non-semantic <div>s everywhere
-- Missing or duplicate <title> or <meta> tags
-- Broken internal links
-- No alt text for images
+Q25. Is the <hr> tag a paired tag?
+Ans. No, <hr> is a self-closing void tag and does not need a closing tag.
+
+
+HTML TEXT FORMATTING :-
+=======================
+Q26. Differentiate between <b> and <strong> tags.
+Ans. Both visually make text bold, but <strong> is semantic and indicates importance, which helps screen readers and SEO.
+
+Q27. What is the purpose of the <em> tag?
+Ans. <em> displays italic text and semantically emphasizes the content.
+
+Q28. Why should <strong>/<em> be preferred over <b>/<i>?
+Ans. Because <strong> and <em> add meaning (semantic value) for accessibility, while <b> and <i> are purely presentational.
+
+Q29. How can you display subscript and superscript in HTML?
+Ans. Use <sub> for subscript (e.g., H<sub>2</sub>O) and <sup> for superscript (e.g., x<sup>2</sup>).
+
+Q30. What is the use of the <mark> tag?
+Ans. <mark> is used to highlight text with a yellow background like a highlighter.
+
+HTML HYPERLINKS :-
+==================
+Q31. What is an HTML hyperlink?
+Ans. A hyperlink is a clickable link created using the <a> tag that takes you from one page or resource to another when clicked.
+
+Q32. What is the purpose of the href attribute in the <a> tag?
+Ans. The href attribute specifies the URL or location to which the hyperlink points.
+
+Q33. Explain the difference between absolute and relative URLs in hyperlinks.
+Ans. Absolute URLs include the full web address (https://example.com/page), while relative URLs link to resources within the same site/project (contact.html or ../images/pic.jpg).
+
+Q34. How can you open a hyperlink in a new browser tab?
+Ans. Add target="_blank" to the anchor tag (<a href="..." target="_blank">).
+
+Q35. What is the use of the mailto: and tel: protocols in hyperlinks?
+Ans. mailto: opens the user's email app to send an email, while tel: opens the dialer to make a phone call.
+
+PATH TYPES IN HTML :-
+=====================
+Q36. What are the two main types of paths used in HTML?
+Ans. Absolute Paths and Relative Paths.
+
+Q37. What is an absolute path? Give an example.
+Ans. An absolute path provides the complete URL including protocol and domain. Example: https://example.com/images/logo.png
+
+Q38. What is a relative path and why is it commonly used?
+Ans. A relative path links a file based on the current file’s location, making the project portable. Example: images/logo.png
+
+Q39. How do you go up one level in directory using relative path?
+Ans. Use "../" at the start of the file path (example: ../photo.jpg).
+
+Q40. What is the use of leading slash (/) in paths?
+Ans. A leading slash makes the path an absolute path within the domain root, starting from the root folder of the website.
+
+
+HTML IMAGES :-
+==============
+Q41. What is the use of the <img> tag in HTML?
+Ans. The <img> tag is used to embed images in a webpage.
+
+Q42. What does the alt attribute do in an image tag?
+Ans. The alt attribute provides alternative text if the image fails to load and improves accessibility.
+
+Q43. Why should you specify width and height for images?
+Ans. To reserve space and prevent layout shifts while the image loads, improving page stability and performance.
+
+Q44. What are some best practices when using images in HTML?
+Ans. Use descriptive alt text, optimize image file size, use proper formats (WebP/JPEG), and organize images in a separate folder.
+
+Q45. What is lazy loading in images?
+Ans. Lazy loading delays loading of images until they are needed (when they appear in the viewport), improving initial load time.
+
+HTML SVGs :-
+============
+Q46. What does SVG stand for and when is it used?
+Ans. SVG stands for Scalable Vector Graphics and is used for vector images like icons and logos that scale without losing quality.
+
+Q47. Difference between <img> and <svg> tags?
+Ans. <img> embeds raster images (jpg/png), whereas <svg> embeds vector graphics defined using XML paths.
+
+Q48. List two advantages of using SVGs.
+Ans. SVGs are resolution-independent, smaller in file size for simple graphics, and easily stylable/animatable using CSS or JS.
+
+Q49. How do you embed an external SVG file in HTML?
+Ans. Using the <img> tag: <img src="icon.svg" alt="Icon"> or using <object>, <embed>, <iframe>.
+
+Q50. Can SVGs be animated? If yes, how?
+Ans. Yes, SVGs can be animated using CSS animations, JavaScript, or SMIL (SVG native animation).
+
+
+HTML LISTS :-
+============
+Q51. What are the three main types of lists in HTML?
+Ans. Unordered List (<ul>), Ordered List (<ol>), and Description List (<dl>).
+
+Q52. Which tag is used to define each item in a list?
+Ans. <li> (list item) tag is used inside <ul> or <ol> to define each item.
+
+Q53. How do ordered and unordered lists differ visually?
+Ans. <ol> displays numbered or lettered items (1, A, i), whereas <ul> displays bullet points (disc, square, circle).
+
+Q54. What is a description list and when is it used?
+Ans. <dl> is used for terms and their definitions, with <dt> for the term and <dd> for the description — often used for glossaries or FAQs.
+
+Q55. How can you change the bullet style in an unordered list?
+Ans. Use the "type" attribute of <ul> (e.g., type="square") or CSS list-style-type property.
+
+
+
+HTML FORMS :-
+=============
+Q56. What is the purpose of the <form> tag?
+Ans. The <form> tag is used to collect user input and submit it to a server for processing.
+
+Q57. What is the difference between GET and POST methods in forms?
+Ans. GET sends form data as URL parameters (visible), suitable for non-sensitive data; POST sends data in the request body (hidden), suitable for sensitive or large data.
+
+Q58. Why are name attributes important for form inputs?
+Ans. The "name" attribute is used as a key when form data is submitted, allowing the server to access submitted values.
+
+Q59. What is the use of the <label> tag?
+Ans. <label> improves accessibility by associating text with input controls and allows users to click on text to focus an input.
+
+Q60. What is the purpose of <fieldset> and <legend> tags?
+Ans. <fieldset> groups related form fields, while <legend> provides a caption/title for the grouped section.
+
+
+HTML TABLES :-
+==============
+Q61. Which tag is used to create a table in HTML?
+Ans. The <table> tag is used to create a table.
+
+Q62. What do <tr>, <td>, and <th> stand for?
+Ans. <tr> defines a table row, <td> defines a table data cell, and <th> defines a table header cell.
+
+Q63. What is the purpose of the colspan and rowspan attributes?
+Ans. colspan allows a cell to span multiple columns, while rowspan allows a cell to span multiple rows.
+
+Q64. What does the <caption> tag do?
+Ans. The <caption> tag adds a title or brief description at the top of the table.
+
+Q65. Why should <thead>, <tbody>, and <tfoot> be used?
+Ans. They group table sections semantically, improve readability, and help with styling and accessibility.
+
+
+HTML MEDIA :-
+==============
+Q66. What is the difference between the <audio> and <video> tags?
+Ans. <audio> is used to embed sound files, while <video> is used to embed video content on webpages.
+
+Q67. What are the common attributes of <audio> and <video>?
+Ans. Common attributes include controls (shows play interface), autoplay, loop, muted, and preload.
+
+Q68. Why is the <source> tag used inside <audio> and <video>?
+Ans. The <source> tag allows multiple file formats to be provided so different browsers can load the supported format.
+
+Q69. What is the use of the <embed> tag?
+Ans. <embed> is used to embed external content like PDFs, Flash files, or multimedia content.
+
+Q70. How do you embed a YouTube video in HTML?
+Ans. Use an <iframe> tag with the YouTube embed link.
+
+
+HTML SEMANTIC :-
+================
+Q71. What is meant by semantic HTML?
+Ans. Semantic HTML refers to using tags that clearly describe the meaning and role of the content they enclose, such as <header>, <nav>, <article>, etc.
+
+Q72. Give any four examples of semantic tags introduced in HTML5.
+Ans. <header>, <nav>, <main>, <section>, <article>, <footer>, <aside>, <figure> are all examples of semantic tags.
+
+Q73. How does semantic HTML improve SEO?
+Ans. Search engines can better understand the structure and importance of content, helping improve page ranking and rich results.
+
+Q74. Which semantic tag is best for grouping site navigation links?
+Ans. The <nav> tag is best used for grouping primary navigation menus.
+
+Q75. What is the use of the <article> tag?
+Ans. <article> is used for independent, self-contained content such as blog posts, news articles, or forum posts.
+
+
+HTML SEO :-
+============
+Q76. What is SEO in the context of HTML?
+Ans. SEO stands for Search Engine Optimization — techniques used to make a webpage more discoverable and rank higher in search engine results.
+
+Q77. Which HTML tag is used to define the title shown in Google search results?
+Ans. The <title> tag inside the <head> section.
+
+Q78. What is the role of the <meta name="description"> tag?
+Ans. It provides a brief summary of the page which appears as a snippet in search engine results.
+
+Q79. Why are headings (<h1>–<h6>) important for SEO?
+Ans. Headings help organize content hierarchically; search engines use them to understand page structure and keyword importance.
+
+Q80. How does the alt attribute on images help SEO?
+Ans. Alt text improves accessibility and helps search engines understand the image content, improving image search ranking.
+
+Q81. What does the <link rel="canonical"> tag do?
+Ans. It specifies the preferred version of a webpage to avoid duplicate content issues and consolidate ranking.

@@ -1,0 +1,37 @@
+HTML SEO :-
+============
+-> Overview:
+ - SEO (Search Engine Optimization) refers to techniques used to help search engines understand and rank your web pages.
+ - HTML plays a crucial role in On-Page SEO through tags, structure, and metadata.
+
+-> Important SEO-Related HTML Tags:
+ - <title>            : Appears on browser tab and search results; must be unique & keyword rich.
+ - <meta name="description"> : Brief summary shown in search engine snippets.
+ - <meta name="keywords">     : (Less important today) List of keywords for the page.
+ - <h1> to <h6>       : Heading tags used to define hierarchy and structure — help bots scan content.
+ - <strong> / <em>    : Show importance of keywords semantically.
+ - <a href="...">     : Anchor tags with descriptive link text improve internal linking.
+ - <img alt="...">    : Alt text helps image search & accessibility.
+ - <link rel="canonical">: Avoids duplicate content issues.
+
+-> Example:
+   <head>
+    <title>Best Travel Destinations 2025 | Travel Blog</title>
+    <meta name="description" content="Explore top travel destinations for 2025 with our expert-curated travel guide.">
+    <link rel="canonical" href="https://example.com/top-travel-destinations-2025" />
+   </head>
+
+-> Best Practices:
+ - Use unique <title> and meta descriptions for every page.
+ - Place important keywords naturally in headings (especially <h1>).
+ - Use proper semantic tags instead of <div> spam.
+ - Optimize images with descriptive file names (e.g., taj-mahal.jpg) and alt attributes.
+ - Create clean readable URLs (example.com/learn-html not example.com/2342?id=12).
+ - Ensure mobile responsiveness — Google is mobile-first.
+ - Use internal links to connect related pages.
+
+-> Expert Tips:
+ - Use schema.org structured data (microdata, JSON-LD) to provide rich snippets.
+ - Fast loading pages = Better SEO (use compressions, CDN, lazy-loading).
+ - Avoid keyword stuffing — quality content wins.
+ - Ensure good accessibility — search engines reward accessible content.
